@@ -1,27 +1,154 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+</head>
+
+<body>
+    <div class="seccion1">
+        <div class="seccion1__foto">
+            <figure class="seccion1__figure">
+                <img src="../src/assets/images/foto.bmp" alt="foto de mí" class="seccion1__image">
+                <h3 class="seccion1__nombre">Javier Parellada González</h3>
+                <h4 class="seccion1__profesion">Programador .Net</h4>
+            </figure>
+        </div>
+        <div class="seccion1__contacto">
+            <h4 class="seccion1__titulo">Contacto</h4>
+            <ul class="contacto">
+                <li class="contacto__mail">jparellada7@uoc.edu</li>
+                <li class="contacto__telefono">646 201 275</li>
+                <li class="contacto__direccion">Tres Cantos, Madrid</li>
+            </ul>
+        </div>
+        <div class="seccion1__referencia">
+            <h4 class="seccion1__titulo">Referencias</h4>
+            <ul class="referencias">
+                <li class="referencias__ref">
+                    <p class="referencias__texto--bold">Manolo Peinado Fernandez</p>
+                    <p class="referencias__texto">Gerente de DISTRIBUCIONES PEINADO S.L.</p>
+                    <p class="referencias__texto">666 456 454</p>
+                </li>
+                <li class="referencias__ref">
+                    <p class="referencias__texto--bold">Enrique Parellada Frías</p>
+                    <p class="referencias__texto">Gerente de SOFT-CONTROL INFORMÁTICA S.A.</p>
+                    <p class="referencias__texto">646 256 253</p>
+                </li>
+            </ul>
+        </div>
+        <div class="seccion1__hobbies">
+            <h4 class="seccion1__titulo">Hobbies</h4>
+            <ul class="hobbies">
+                <li class="hobbies__hob">Ciclismo</li>
+                <li class="hobbies__hob">Montañismo</li>
+                <li class="hobbies__hob">viajes</li>
+                <li class="hobbies__hob">Cine</li>
+            </ul>
+        </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <div class="seccion2">
+        <div class="seccion2__portada">
+            <h3 class="seccion2__nombre">Javier Parellada González</h3>
+            <h4 class="seccion2__profesion">Programador .Net</h4>
+        </div>
+        <div class="seccion2__profile">
+            <h4 class="seccion2__titulo">Perfil</h4>
+            <p class="descripcion__profile">Ejecutivo de marketing con 20 años de experiencia en la creación de infraestructuras comerciales, crecimiento de marca y optimización de producto en el sector farmacéutico y químico. Estoy acostumbrado a trabajar en ambientes multinacionales
+                y multiculturales, con el compromiso de crear la mejor experiencia para los clientes</p>
+        </div>
+        <div class="seccion2__experiencia">
+            <h4 class="seccion2__titulo">Experiencia</h4>
+            <div class="experiencia">
+                <p class="experiencia__p--bold">1998-1999: Desarrollador en Transtool MultiBase</p>
+                <p class="experiencia__p">Soft-Control / Madrid</p>
+                <ul class="experiencia__ul">
+                    <li class="experiencia__li">Mantenimiento software de gestión</li>
+                    <li class="experiencia__li">Puesta en marcha de aplicaciones en el cliente</li>
+                </ul>
+                <p class="experiencia__p--bold">1999-2005: Marinero en la Armada española</p>
+                <p class="experiencia__p">Armada Española/ Cádiz</p>
+                <ul class="experiencia__ul">
+                    <li class="experiencia__li">Mantenimiento equipos eletrónicos navales</li>
+                </ul>
+                <p class="experiencia__p--bold">2005-2009: Administrativo</p>
+                <p class="experiencia__p">Distribuciones Peinado S.L./ Cádiz</p>
+                <ul class="experiencia__ul">
+                    <li class="experiencia__li">Gestión de clientes</li>
+                    <li class="experiencia__li">Gestión de pedidos</li>
+                    <li class="experiencia__li">Tareas administrativas</li>
+                </ul>
+                <p class="experiencia__p--bold">2009-2022: Desarrollador en .NET (Visual Basic)</p>
+                <p class="experiencia__p">Soft-Control / Madrid</p>
+                <ul class="experiencia__ul">
+                    <li class="experiencia__li">Desarrollo de aplicaciones de escritorio</li>
+                    <li class="experiencia__li">Mantenimiento de base de datos (SQL)</li>
+                    <li class="experiencia__li">Formación de uso de la aplicación en clientes</li>
+                    <li class="experiencia__li">Puesta en marcha de aplicaciones en el cliente</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion2__formacion ">
+            <h4 class="seccion2__titulo ">Formación</h4>
+            <table class="tablaformacion ">
+                <tr class="tablaformacion__columna ">
+                    <td class="tablaformacion__celda ">
+                        <p class="tablaformacion__p--bold">1995-1996</p>
+                        <p class="tablaformacion__p">3º BUP en Estados Unidos</p>
+                    </td>
+                    <td class="tablaformacion__celda ">
+                        <p class="tablaformacion__p--bold">1999-2000</p>
+                        <p class="tablaformacion__p">Escuela de elecrónica de la armada (ETEA)</p>
+                    </td>
+                </tr>
+                <tr class="tablaformacion__columna ">
+                    <td class="tablaformacion__celda ">
+                        <p class="tablaformacion__p--bold">2002-2003</p>
+                        <p class="tablaformacion__p">Curso ContaPlus</p>
+                    </td>
+                    <td class="tablaformacion__celda ">
+                        <p class="tablaformacion__p--bold">2002-2007</p>
+                        <p class="tablaformacion__p">Diplomatura en ciencias empresariales</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="seccion2__habilidades">
+            <h4 class="seccion2__titulo ">Habilidades</h4>
+            <table class="tablahabilidades ">
+                <tr class="tablahabilidades__columna ">
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__p11">SQL</p>
+                    </td>
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__sql">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    </td>
+                </tr>
+                <tr class="tablahabilidades__columna ">
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__p11">.NET EN VB</p>
+                    </td>
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__vb">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    </td>
+                </tr>
+                <tr class="tablahabilidades__columna ">
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__p11">CONTABILIDAD</p>
+                    </td>
+                    <td class="tablahabilidades__celda ">
+                        <p class="tablahabilidades__conta">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>

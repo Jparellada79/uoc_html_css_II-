@@ -3,11 +3,12 @@
  * Do not include SCSS code in this file.
  */
 
+
 /**
  * Import variables
  */
 
-@import "variables";
+@import "layouts/variables";
 
 /**
  * Import npm dependencies
@@ -23,7 +24,7 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "layouts/curriculum";
 
 /**
  * Do NOT include anything else in this file!

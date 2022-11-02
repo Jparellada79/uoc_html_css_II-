@@ -1,0 +1,135 @@
+ @use 'variables';
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ body {
+     height: 100vh;
+     font-family: $font-family-sans-serif;
+     @include grid;
+ }
+ 
+ .seccion1 {
+     @include cajasseccion1($color-textoblanco, $color-fondoheader);
+     &__contacto {
+         .contacto {
+             @include lista(30px);
+             padding-left: 50px;
+             &__telefono {
+                 padding-bottom: 20px;
+                 list-style-image: url('/src/assets/images/telefono.png');
+             }
+             &__mail {
+                 padding-bottom: 20px;
+                 list-style-image: url('/src/assets/images/correo.png');
+             }
+             &__direccion {
+                 list-style-image: url('/src/assets/images/direccion.png');
+             }
+         }
+     }
+     &__figure {
+         padding: 10px;
+         margin: auto;
+         color: $color-textonegro;
+         background-color: $color-seccion2;
+         -webkit-border-radius: 20px;
+     }
+     &__foto {
+         display: flex;
+     }
+     &__hobbies {
+         .hobbies {
+             @include lista(30px);
+             &__hob {
+                 margin-top: 10px;
+             }
+         }
+     }
+     &__referencia {
+         .referencias {
+             @include lista(30px);
+             .referencias {
+                 &__texto {
+                     &--bold {
+                         margin-top: 10px;
+                         font-weight: bold;
+                     }
+                 }
+             }
+         }
+     }
+     &__titulo {
+         @include titulosseccion1;
+     }
+ }
+ 
+ .seccion2 {
+     @include cajasseccion1($color-textonegro,
+     $color-seccion2);
+     &__experiencia {
+         .experiencia {
+             @include lista(0px);
+             &__p {
+                 padding-bottom: 5px;
+                 &--bold {
+                     font-weight: bold;
+                 }
+             }
+             &__ul {
+                 padding-bottom: 15px;
+                 padding-left: 25px;
+             }
+         }
+     }
+     &__formacion {
+         .tablaformacion {
+             @include tabla;
+             min-width: 300px;
+             margin: 25px;
+             border-collapse: collapse;
+             box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+             &__celda {
+                 padding: 10px;
+                 border: 1px solid #1b1919;
+             }
+             &__p {
+                 padding-bottom: 5px;
+                 &--bold {
+                     font-weight: bold;
+                 }
+             }
+         }
+     }
+     &__habilidades {
+         .tablahabilidades {
+             margin: 25px;
+             &__p11 {
+                 font-weight: bold;
+             }
+             &__sql {
+                 @include habilidades($backgroundsql);
+             }
+             &__vb {
+                 @include habilidades($backgroundnet);
+             }
+             &__conta {
+                 @include habilidades($backgroundconta);
+             }
+         }
+     }
+     &__profile {
+         padding: 10px;
+     }
+     &__nombre {
+         @include nombre(3rem);
+     }
+     &__profesion {
+         @include nombre(2rem);
+     }
+     &__titulo {
+         @include titulosseccion2;
+     }
+ }

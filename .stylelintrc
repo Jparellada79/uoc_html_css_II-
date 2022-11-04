@@ -5,7 +5,7 @@
         "color-named": "never",
         "color-no-invalid-hex": true,
         "declaration-block-semicolon-newline-after": "always",
-        "number-leading-zero": "never"
-
+        "number-leading-zero": "never",
+        "color-hex-case": "lower"
     }
 }

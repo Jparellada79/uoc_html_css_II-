@@ -12,7 +12,7 @@ body {
 }
 
 .seccion1 {
-    @include cajasseccion1($color-textoblanco, $color-fondoheader);
+    @include cajasseccion1($color-textoblanco, $color-verde);
     &__contacto {
         .contacto {
             @include lista(30px);
@@ -67,6 +67,13 @@ body {
 
 .seccion2 {
     @include cajasseccion1($color-textonegro, $color-seccion2);
+    &__profile {
+        .profile {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 30px;
+        }
+    }
     &__experiencia {
         .experiencia {
             @include lista(0px);
@@ -117,9 +124,6 @@ body {
                 @include habilidades($backgroundconta);
             }
         }
-    }
-    &__profile {
-        padding: 10px;
     }
     &__nombre {
         @include nombre(3rem);
